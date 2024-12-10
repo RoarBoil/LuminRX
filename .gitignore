@@ -1,0 +1,22 @@
+# middle protein feature files
+*.pdb
+*.fasta
+*.hhm
+*.dssp
+*.rasa
+*.ss
+
+# middle output
+*.pyc
+*.model
+*.npy
+experiment/images/
+datasets/raw/
+datasets/merged_evidence_patho_annotation.csv
+datasets/merged_evidence_patho.csv
+datasets/merged_evidence_patho_annotation_fix.csv
+
+
+# middle scripts
+middle_output.py
+training_5fold.py
