@@ -12,6 +12,7 @@
 *.npy
 experiments/images/
 datasets/raw/
+datasets/middlefile/
 datasets/merged_evidence_patho_annotation.csv
 datasets/merged_evidence_patho.csv
 datasets/merged_evidence_patho_annotation_fix.csv

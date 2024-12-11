@@ -1,0 +1,571 @@
+﻿gene,uniprotac,variant,drug,label,source,patho,pchembl_value
+SLCO1B3,F5H094,S112P,mycophenolic acid,sensitivity,pharmgkb,Benign,
+SLCO1B3,F5H094,S112P,sunitinib,sensitivity,pharmgkb,Benign,
+TBXT,O15178,G177D,flunisolide,sensitivity,pharmgkb,Benign,
+SLC22A1,O15245,M408V,metformin,sensitivity,pharmgkb,Benign,
+ABCC4,O15439,G187W,latanoprost,sensitivity,pharmgkb,Benign,
+XRCC3,O43542,T241M,Platinum compounds,sensitivity,pharmgkb,Pathogenic,
+SLC28A2,O43868,P22L,gemcitabine,sensitivity,pharmgkb,Benign,
+SF3B1,O75533,K666N,Spliceostatin A,sensitivity,civic,Pathogenic,
+SF3B1,O75533,K700E,Spliceostatin A,sensitivity,civic,Pathogenic,
+IDH1,O75874,R132C,AGI-5198,sensitivity,civic,Pathogenic,7.7
+IDH1,O75874,R132C,BPTES,sensitivity,civic,Pathogenic,
+IDH1,O75874,R132C,GSK321,sensitivity,civic,Pathogenic,8.42
+IDH1,O75874,R132C,Ivosidenib,sensitivity,civic,Pathogenic,8.46
+IDH1,O75874,R132C,Olaparib,sensitivity,civic,Pathogenic,
+IDH1,O75874,R132C,Temozolomide,sensitivity,civic,Pathogenic,
+IDH1,O75874,R132H,AGI-5198,sensitivity,civic,Pathogenic,7.7
+ABCA1,O95477,K1587R,fenofibrate,sensitivity,pharmgkb,Benign,
+ABCA1,O95477,R219K,atorvastatin,sensitivity,pharmgkb,Benign,
+ABCA1,O95477,R219K,fenofibrate,sensitivity,pharmgkb,Benign,
+ABCA1,O95477,R219K,pravastatin,sensitivity,pharmgkb,Benign,
+ABCA1,O95477,R219K,rosuvastatin,sensitivity,pharmgkb,Benign,
+ABCA1,O95477,R219K,simvastatin,sensitivity,pharmgkb,Benign,
+ADH1B,P00325,R370C,naltrexone,sensitivity,pharmgkb,Benign,
+ADH1C,P00326,I350V,naltrexone,sensitivity,pharmgkb,Benign,
+F13A1,P00488,V35L,aspirin,sensitivity,pharmgkb,Benign,
+ABL1,P00519,E255K,Axitinib,resistance,civic,Likely pathogenic,9.7
+ABL1,P00519,E255K,Bosutinib,resistance,civic,Likely pathogenic,9
+ABL1,P00519,E255K,Dasatinib,resistance,civic,Likely pathogenic,9.77
+ABL1,P00519,E255K,Imatinib,resistance,civic,Likely pathogenic,7.89
+ABL1,P00519,E255K,Imatinib Mesylate,resistance,civic,Likely pathogenic,6.72
+ABL1,P00519,E255K,Nilotinib,resistance,civic,Likely pathogenic,8.26
+ABL1,P00519,E255V,Axitinib,resistance,civic,Pathogenic,9.7
+ABL1,P00519,E255V,Imatinib,resistance,civic,Pathogenic,7.89
+ABL1,P00519,E255V,Imatinib Mesylate,resistance,civic,Pathogenic,6.72
+ABL1,P00519,E255V,Nilotinib,resistance,civic,Pathogenic,8.26
+ABL1,P00519,E355G,Imatinib,resistance,civic,Likely pathogenic,7.89
+ABL1,P00519,E355G,Imatinib Mesylate,resistance,civic,Likely pathogenic,6.72
+ABL1,P00519,F317C,Dasatinib,resistance,civic,Likely pathogenic,9.77
+ABL1,P00519,F317I,Dasatinib,resistance,civic,Likely pathogenic,9.77
+ABL1,P00519,F317L,Axitinib,resistance,civic,Likely pathogenic,9.7
+ABL1,P00519,F317L,Dasatinib,resistance,civic,Likely pathogenic,9.77
+ABL1,P00519,F317L,Imatinib,resistance,civic,Likely pathogenic,7.89
+ABL1,P00519,F317L,Imatinib Mesylate,resistance,civic,Likely pathogenic,6.72
+ABL1,P00519,F317L,Ponatinib,sensitivity,civic,Likely pathogenic,9.52
+ABL1,P00519,F317V,Axitinib,resistance,civic,Likely pathogenic,9.7
+ABL1,P00519,F317V,Dasatinib,resistance,civic,Likely pathogenic,9.77
+ABL1,P00519,F359C,Imatinib Mesylate,resistance,civic,Likely pathogenic,6.72
+ABL1,P00519,F359I,Imatinib Mesylate,resistance,civic,Likely pathogenic,6.72
+ABL1,P00519,F359V,Dasatinib,resistance,civic,Likely pathogenic,9.77
+ABL1,P00519,F359V,Imatinib,resistance,civic,Likely pathogenic,7.89
+ABL1,P00519,F359V,Imatinib Mesylate,resistance,civic,Likely pathogenic,6.72
+ABL1,P00519,F359V,Nilotinib,resistance,civic,Likely pathogenic,8.26
+ABL1,P00519,G250E,Axitinib,resistance,civic,Likely pathogenic,9.7
+ABL1,P00519,G250E,Dasatinib,sensitivity,civic,Likely pathogenic,9.77
+ABL1,P00519,G250E,Imatinib,resistance,civic,Likely pathogenic,7.89
+ABL1,P00519,G250E,Imatinib Mesylate,resistance,civic,Likely pathogenic,6.72
+ABL1,P00519,G250E,Nilotinib,resistance,civic,Likely pathogenic,8.26
+ABL1,P00519,H396R,Axitinib,resistance,civic,Pathogenic,9.7
+ABL1,P00519,H396R,Bosutinib,resistance,civic,Pathogenic,9
+ABL1,P00519,H396R,Imatinib,resistance,civic,Pathogenic,7.89
+ABL1,P00519,H396R,Imatinib Mesylate,resistance,civic,Pathogenic,6.72
+ABL1,P00519,L248V,Axitinib,resistance,civic,Likely pathogenic,9.7
+ABL1,P00519,L248V,Imatinib,resistance,civic,Likely pathogenic,7.89
+ABL1,P00519,L248V,Imatinib Mesylate,resistance,civic,Likely pathogenic,6.72
+ABL1,P00519,M351T,Imatinib Mesylate,resistance,civic,Pathogenic,6.72
+ABL1,P00519,M351T,Nilotinib,sensitivity,civic,Pathogenic,8.26
+ABL1,P00519,Q252H,Axitinib,resistance,civic,Likely pathogenic,9.7
+ABL1,P00519,Q252H,Dasatinib,resistance,civic,Likely pathogenic,9.77
+ABL1,P00519,Q252H,Imatinib Mesylate,resistance,civic,Likely pathogenic,6.72
+ABL1,P00519,T315A,Axitinib,sensitivity,civic,Likely pathogenic,9.7
+ABL1,P00519,T315A,Dasatinib,resistance,civic,Likely pathogenic,9.77
+ABL1,P00519,T315I,Axitinib,sensitivity,civic,Pathogenic,9.7
+ABL1,P00519,T315I,Bosutinib,resistance,civic,Pathogenic,9
+ABL1,P00519,T315I,Dasatinib,resistance,civic,Pathogenic,9.77
+ABL1,P00519,T315I,Imatinib,resistance,civic,Pathogenic,7.89
+ABL1,P00519,T315I,Imatinib Mesylate,resistance,civic,Pathogenic,6.72
+ABL1,P00519,T315I,Nilotinib,resistance,civic,Pathogenic,8.26
+ABL1,P00519,T315I,Ponatinib,sensitivity,civic,Pathogenic,9.52
+ABL1,P00519,V299L,Axitinib,sensitivity,civic,Likely pathogenic,9.7
+ABL1,P00519,V299L,Dasatinib,resistance,civic,Likely pathogenic,9.77
+ABL1,P00519,V299L,Imatinib Mesylate,resistance,civic,Likely pathogenic,6.72
+ABL1,P00519,V299L,Nilotinib,sensitivity,civic,Likely pathogenic,8.26
+ABL1,P00519,Y253F,Axitinib,resistance,civic,Likely pathogenic,9.7
+ABL1,P00519,Y253F,Imatinib,resistance,civic,Likely pathogenic,7.89
+ABL1,P00519,Y253H,Imatinib Mesylate,resistance,civic,Pathogenic,6.72
+EGFR,P00533,A289V,Erlotinib,sensitivity,civic,Likely pathogenic,10
+EGFR,P00533,G598V,Erlotinib,sensitivity,civic,Likely pathogenic,10
+EGFR,P00533,G719A,Gefitinib,sensitivity,civic,Pathogenic,10
+EGFR,P00533,G719S,Erlotinib,sensitivity,civic,Pathogenic,10
+EGFR,P00533,G719S,Gefitinib,sensitivity,civic,Pathogenic,10
+EGFR,P00533,L858R,Afatinib,sensitivity,civic,Pathogenic,11
+EGFR,P00533,L858R,Canertinib,sensitivity,civic,Pathogenic,10
+EGFR,P00533,L858R,Crizotinib,resistance,civic,Pathogenic,6.17
+EGFR,P00533,L858R,Dacomitinib,sensitivity,civic,Pathogenic,8.74
+EGFR,P00533,L858R,Erlotinib,sensitivity,civic,Pathogenic,10
+EGFR,P00533,L858R,gefitinib,sensitivity,pharmgkb,Pathogenic,10
+EGFR,P00533,L858R,Lapatinib,sensitivity,civic,Pathogenic,10.22
+EGFR,P00533,L858R,Neratinib,sensitivity,civic,Pathogenic,10.7
+EGFR,P00533,L858R,Osimertinib,sensitivity,civic,Pathogenic,10.7
+EGFR,P00533,L861Q,Erlotinib,sensitivity,civic,Pathogenic,10
+EGFR,P00533,L861Q,Gefitinib,sensitivity,civic,Pathogenic,10
+EGFR,P00533,L861R,Gefitinib,sensitivity,civic,Pathogenic,10
+EGFR,P00533,R108K,Erlotinib,sensitivity,civic,Likely pathogenic,10
+EGFR,P00533,R776C,Erlotinib,sensitivity,civic,Likely pathogenic,10
+EGFR,P00533,R831H,Erlotinib,sensitivity,civic,Pathogenic,10
+EGFR,P00533,S768I,Gefitinib,sensitivity,civic,Pathogenic,10
+EGFR,P00533,T263P,Erlotinib,sensitivity,civic,Likely pathogenic,10
+EGFR,P00533,T790M,Canertinib,sensitivity,civic,Pathogenic,10
+EGFR,P00533,T790M,Lapatinib,resistance,civic,Pathogenic,10.22
+EGFR,P00533,T790M,Neratinib,sensitivity,civic,Pathogenic,10.7
+EGFR,P00533,T790M,Osimertinib,sensitivity,civic,Pathogenic,10.7
+EGFR,P00533,T790M,Rociletinib,sensitivity,civic,Pathogenic,8.8
+EGFR,P00533,T790M,Staurosporine,sensitivity,civic,Pathogenic,9.54
+EGFR,P00533,V742A,Erlotinib,sensitivity,civic,Likely pathogenic,10
+NRAS,P01111,G13D,Tanespimycin,sensitivity,civic,Pathogenic,
+NRAS,P01111,Q61L,Temozolomide,sensitivity,civic,Pathogenic,
+NRAS,P01111,Q61R,Temozolomide,sensitivity,civic,Pathogenic,
+HRAS,P01112,G13D,Vemurafenib,resistance,civic,Pathogenic,
+KRAS,P01116,A146V,Abemaciclib,sensitivity,civic,Pathogenic,
+KRAS,P01116,G12A,Gefitinib,resistance,civic,Pathogenic,
+KRAS,P01116,G12A,Melphalan,resistance,civic,Pathogenic,
+KRAS,P01116,G12A,Regorafenib,resistance,civic,Pathogenic,
+KRAS,P01116,G12C,Gefitinib,resistance,civic,Pathogenic,
+KRAS,P01116,G12C,Melphalan,resistance,civic,Pathogenic,
+KRAS,P01116,G12C,Regorafenib,resistance,civic,Pathogenic,
+KRAS,P01116,G12D,Gefitinib,resistance,civic,Pathogenic,
+KRAS,P01116,G12D,Melphalan,resistance,civic,Pathogenic,
+KRAS,P01116,G12D,MK2206,sensitivity,civic,Pathogenic,
+KRAS,P01116,G12D,Regorafenib,resistance,civic,Pathogenic,
+KRAS,P01116,G12D,Vemurafenib,resistance,civic,Pathogenic,4.78
+KRAS,P01116,G12R,Regorafenib,resistance,civic,Pathogenic,
+KRAS,P01116,G12S,Gefitinib,resistance,civic,Pathogenic,
+KRAS,P01116,G12S,Melphalan,resistance,civic,Pathogenic,
+KRAS,P01116,G12S,Regorafenib,resistance,civic,Pathogenic,
+KRAS,P01116,G12V,Gefitinib,resistance,civic,Pathogenic,
+KRAS,P01116,G12V,Palbociclib,sensitivity,civic,Pathogenic,
+KRAS,P01116,G12V,Regorafenib,resistance,civic,Pathogenic,
+KRAS,P01116,G13D,Pictilisib,resistance,civic,Pathogenic,
+KRAS,P01116,G13D,Regorafenib,resistance,civic,Pathogenic,
+APOE,P02649,C130R,simvastatin,sensitivity,pharmgkb,Pathogenic,
+APOE,P02649,C130R,warfarin,sensitivity,pharmgkb,Pathogenic,
+APOE,P02649,R176C,atorvastatin,sensitivity,pharmgkb,Pathogenic,
+APOE,P02649,R176C,fenofibrate,sensitivity,pharmgkb,Pathogenic,
+APOE,P02649,R176C,fluvastatin,sensitivity,pharmgkb,Pathogenic,
+APOE,P02649,R176C,pravastatin,sensitivity,pharmgkb,Pathogenic,
+APOE,P02649,R176C,warfarin,sensitivity,pharmgkb,Pathogenic,
+GC,P02774,D432E,deferasirox,sensitivity,pharmgkb,Benign,
+APOB,P04114,P2739Q,fenofibrate,sensitivity,pharmgkb,Pathogenic,
+APOB,P04114,R3638Q,irbesartan,sensitivity,pharmgkb,Benign,
+APOB,P04114,T98I,irbesartan,sensitivity,pharmgkb,Benign,
+SOD2,P04179,V16A,cyclophosphamide,sensitivity,pharmgkb,Benign,
+ERBB2,P04626,D769Y,Neratinib,sensitivity,civic,Pathogenic,8.75
+ERBB2,P04626,G309A,Neratinib,sensitivity,civic,Pathogenic,8.75
+ERBB2,P04626,L755S,Lapatinib,resistance,civic,Likely pathogenic,8.57
+ERBB2,P04626,L755S,Neratinib,sensitivity,civic,Likely pathogenic,8.75
+ERBB2,P04626,L755W,Neratinib,sensitivity,civic,Likely pathogenic,8.75
+ERBB2,P04626,N857S,Lapatinib,sensitivity,civic,Pathogenic,8.57
+ERBB2,P04626,R896C,Neratinib,sensitivity,civic,Pathogenic,8.75
+ERBB2,P04626,V777L,Neratinib,sensitivity,civic,Pathogenic,8.75
+ERBB2,P04626,V842I,Neratinib,sensitivity,civic,Pathogenic,8.75
+TP53,P04637,G245S,AMGMDS3,resistance,civic,Pathogenic,
+TP53,P04637,M237I,AMGMDS3,resistance,civic,Pathogenic,
+TP53,P04637,P47S,Cisplatin,resistance,civic,Benign,
+TP53,P04637,R158H,AMGMDS3,resistance,civic,Pathogenic,
+TP53,P04637,R158L,AMGMDS3,resistance,civic,Pathogenic,
+TP53,P04637,R175H,AMGMDS3,resistance,civic,Pathogenic,
+TP53,P04637,R175H,Doxorubicin,sensitivity,civic,Pathogenic,
+TP53,P04637,R248Q,AMGMDS3,resistance,civic,Pathogenic,
+TP53,P04637,R248W,AMGMDS3,resistance,civic,Pathogenic,
+TP53,P04637,R273C,AMGMDS3,resistance,civic,Pathogenic,
+TP53,P04637,R273H,AMGMDS3,resistance,civic,Pathogenic,
+TP53,P04637,V157F,AMGMDS3,resistance,civic,Pathogenic,
+TP53,P04637,Y220C,AMGMDS3,resistance,civic,Pathogenic,
+ITGB3,P05106,L59P,clopidogrel,sensitivity,pharmgkb,Benign,
+CYP2E1,P05181,F421L,risperidone,sensitivity,pharmgkb,Benign,
+BCHE,P06276,A567T,donepezil,sensitivity,pharmgkb,Pathogenic,7.85
+BCHE,P06276,A567T,rivastigmine,sensitivity,pharmgkb,Pathogenic,7.84
+GLA,P06280,A156T,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,D264N,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,D313Y,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,D322E,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,D33G,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,G183D,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,G373S,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,G85A,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,I253T,migalastat,sensitivity,pharmgkb,Likely pathogenic,7.89
+GLA,P06280,L300P,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,L36W,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,M187I,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,P205T,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,P259L,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,R112H,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,R301L,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,R356W,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GLA,P06280,Y216C,migalastat,sensitivity,pharmgkb,Pathogenic,7.89
+GP1BA,P07359,T161M,aspirin,sensitivity,pharmgkb,Benign,
+RET,P07949,C634W,Motesanib,resistance,civic,Pathogenic,7.18
+RET,P07949,M918T,AZD1480,sensitivity,civic,Pathogenic,
+RET,P07949,M918T,Cabozantinib,sensitivity,civic,Pathogenic,8.62
+RET,P07949,M918T,Motesanib,resistance,civic,Pathogenic,7.18
+RET,P07949,M918T,Sorafenib,sensitivity,civic,Pathogenic,8.23
+ABCB1,P08183,I1145M,agomelatine,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,atorvastatin,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,cytarabine,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,granisetron,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,imatinib,sensitivity,pharmgkb,Benign,6.24
+ABCB1,P08183,I1145M,losartan,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,modafinil,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,morphine,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,ondansetron,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,oxaliplatin,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,phenobarbital,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,phenytoin,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,Platinum compounds,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,remifentanil,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,tacrolimus,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,tamoxifen,sensitivity,pharmgkb,Benign,4.25
+ABCB1,P08183,I1145M,tramadol,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,venlafaxine,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,I1145M,vincristine,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S400N,tacrolimus,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S400N,temozolomide,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S893A,atorvastatin,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S893A,cyclosporine,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S893A,fluoxetine,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S893A,modafinil,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S893A,ondansetron,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S893A,paclitaxel,sensitivity,pharmgkb,Benign,5.59
+ABCB1,P08183,S893A,pravastatin,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S893A,simvastatin,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S893A,sunitinib,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S893A,tacrolimus,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S893A,tramadol,sensitivity,pharmgkb,Benign,
+ABCB1,P08183,S893T,Paclitaxel,sensitivity,civic,Benign,5.59
+NR3C2,P08235,V180I,enalapril,sensitivity,pharmgkb,Benign,
+MET,P08581,D1228N,Crizotinib,resistance,civic,Pathogenic,9.29
+ADRB1,P08588,S49G,carvedilol,sensitivity,pharmgkb,Benign,
+ADRB1,P08588,S49G,metoprolol,sensitivity,pharmgkb,Benign,7.26
+ADRB1,P08588,S49G,timolol,sensitivity,pharmgkb,Benign,8.27
+CYP3A4,P08684,M445T,fluvastatin,sensitivity,pharmgkb,Benign,
+ADRA2A,P08913,N266K,dexmedetomidine,sensitivity,pharmgkb,Benign,
+ROS1,P08922,G2032R,Cabozantinib,sensitivity,civic,Pathogenic,
+ROS1,P08922,G2032R,Foretinib,sensitivity,civic,Pathogenic,8.09
+ROS1,P08922,G2032R,Lorlatinib,sensitivity,civic,Pathogenic,10
+GSTP1,P09211,A114V,cisplatin,sensitivity,pharmgkb,Benign,
+GSTP1,P09211,I105V,cyclophosphamide,sensitivity,pharmgkb,Benign,
+GSTP1,P09211,I105V,dimethyl fumarate,sensitivity,pharmgkb,Benign,
+GSTP1,P09211,I105V,FOLFOX Regimen,sensitivity,civic,Benign,
+GSTP1,P09211,I105V,Platinum compounds,sensitivity,pharmgkb,Benign,
+ARAF,P10398,S214C,Sorafenib,sensitivity,civic,Likely pathogenic,8.15
+ARAF,P10398,S214C,Trametinib,sensitivity,civic,Likely pathogenic,
+CYP2D6,P10635,P34A,escitalopram,sensitivity,pharmgkb,Likely benign,
+KIT,P10721,D816H,Imatinib,resistance,civic,Pathogenic,7.79
+KIT,P10721,D816V,Imatinib,resistance,civic,Pathogenic,7.79
+KIT,P10721,D816V,Midostaurin,sensitivity,civic,Pathogenic,6.96
+KIT,P10721,D820A,Imatinib,resistance,civic,Pathogenic,7.79
+KIT,P10721,D820G,Imatinib,resistance,civic,Pathogenic,7.79
+KIT,P10721,D820Y,Imatinib,resistance,civic,Pathogenic,7.79
+KIT,P10721,D820Y,Regorafenib,sensitivity,civic,Pathogenic,8.21
+KIT,P10721,D820Y,Sunitinib,sensitivity,civic,Pathogenic,9.15
+KIT,P10721,K642E,Dasatinib,sensitivity,civic,Pathogenic,9
+KIT,P10721,K642E,Imatinib,sensitivity,civic,Pathogenic,7.79
+KIT,P10721,L576P,Dasatinib,sensitivity,civic,Pathogenic,9
+KIT,P10721,L576P,Sunitinib,resistance,civic,Pathogenic,9.15
+KIT,P10721,M541L,Imatinib,sensitivity,civic,Pathogenic,7.79
+KIT,P10721,N822K,Imatinib,resistance,civic,Pathogenic,7.79
+KIT,P10721,N822K,Ponatinib,sensitivity,civic,Pathogenic,8.77
+KIT,P10721,V559D,Imatinib,sensitivity,civic,Pathogenic,7.79
+KIT,P10721,V560D,Imatinib Mesylate,sensitivity,civic,Pathogenic,7
+KIT,P10721,V560D,Sunitinib,resistance,civic,Pathogenic,9.15
+KIT,P10721,V654A,Imatinib,resistance,civic,Pathogenic,7.79
+KIT,P10721,V654A,Sunitinib,sensitivity,civic,Pathogenic,9.15
+KIT,P10721,Y823D,Imatinib,resistance,civic,Likely pathogenic,7.79
+FGFR1,P11362,N546K,Pemigatinib,sensitivity,civic,Pathogenic,9.4
+FGFR1,P11362,N546K,Ponatinib,sensitivity,civic,Pathogenic,9.15
+MTHFD1,P11586,R653Q,methotrexate,sensitivity,pharmgkb,Benign,
+CETP,P11597,V422I,fluvastatin,sensitivity,pharmgkb,Benign,
+CETP,P11597,V422I,rosuvastatin,sensitivity,pharmgkb,Benign,
+CETP,P11597,V422I,simvastatin,sensitivity,pharmgkb,Benign,
+CYP2C9,P11712,I359L,losartan,sensitivity,pharmgkb,Benign,
+CYP2C9,P11712,R144C,irbesartan,sensitivity,pharmgkb,Benign,
+CDK4,P11802,R24C,Palbociclib,sensitivity,civic,Pathogenic,8.09
+CFTR,P13569,A1067P,ivacaftor,sensitivity,pharmgkb,Likely pathogenic,8.52
+CFTR,P13569,A455E,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,A561E,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,A561E,lumacaftor,sensitivity,pharmgkb,Pathogenic,5.59
+CFTR,P13569,D110E,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,D110H,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,D1152H,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,D1270N,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,D579A,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,E56K,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,E92K,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,F1052L,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,F1074L,ivacaftor,sensitivity,pharmgkb,Likely pathogenic,8.52
+CFTR,P13569,G1244V,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,G1249R,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,G1349D,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,G178R,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,G551D,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,G551S,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,G970R,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,H1054D,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,I336K,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,L206W,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,L927P,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,L997F,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,M1V,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,P67L,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,R1066L,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,R1070Q,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,R1070W,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,R117G,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,R117H,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,R334W,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,R347L,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,R352Q,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,R668C,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,R74W,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,S1235R,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,S1251N,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,S1255P,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,S549N,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,S549R,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,S549R,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,S945L,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,S977F,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+CFTR,P13569,T338I,ivacaftor,sensitivity,pharmgkb,Pathogenic,8.52
+BRAF,P15056,D594G,Sorafenib,sensitivity,civic,Pathogenic,8.36
+BRAF,P15056,D594G,Trametinib,sensitivity,civic,Pathogenic,
+BRAF,P15056,D594G,U0126,resistance,civic,Pathogenic,6.6
+BRAF,P15056,G469E,Sorafenib,sensitivity,civic,Pathogenic,8.36
+BRAF,P15056,G469E,U0126,resistance,civic,Pathogenic,6.6
+BRAF,P15056,L597Q,Trametinib,sensitivity,civic,Pathogenic,
+BRAF,P15056,L597R,Vemurafenib,sensitivity,civic,Pathogenic,8.49
+BRAF,P15056,L597S,MEK Inhibitor TAK-733,sensitivity,civic,Pathogenic,
+BRAF,P15056,L597V,Trametinib,sensitivity,civic,Pathogenic,
+BRAF,P15056,V600D,BRAF Inhibitor,sensitivity,civic,Pathogenic,
+BRAF,P15056,V600D,Dabrafenib,sensitivity,civic,Pathogenic,9.4
+BRAF,P15056,V600D,Vemurafenib,sensitivity,civic,Pathogenic,8.49
+BRAF,P15056,V600E,Cobimetinib,sensitivity,civic,Likely pathogenic,8.74
+BRAF,P15056,V600E,Dabrafenib,resistance,civic,Likely pathogenic,9.4
+BRAF,P15056,V600E,Irinotecan,resistance,civic,Likely pathogenic,
+BRAF,P15056,V600E,Oxaliplatin,resistance,civic,Likely pathogenic,
+BRAF,P15056,V600E,Pictilisib,sensitivity,civic,Likely pathogenic,
+BRAF,P15056,V600E,Trametinib,sensitivity,civic,Likely pathogenic,
+BRAF,P15056,V600K,Dabrafenib,sensitivity,civic,Pathogenic,9.4
+BRAF,P15056,V600K,Trametinib,sensitivity,civic,Pathogenic,
+BRAF,P15056,V600K,Vemurafenib,sensitivity,civic,Pathogenic,8.49
+NQO1,P15559,P187S,Amrubicin,sensitivity,civic,Pathogenic,
+NQO1,P15559,P187S,Platinum compounds,sensitivity,pharmgkb,Pathogenic,
+NQO1,P15559,P187S,warfarin,sensitivity,pharmgkb,Pathogenic,
+PDGFRA,P16234,D842I,Crenolanib,sensitivity,civic,Likely pathogenic,
+PDGFRA,P16234,D842V,Crenolanib,sensitivity,civic,Pathogenic,
+PDGFRA,P16234,D842V,Imatinib,resistance,civic,Pathogenic,8.7
+PDGFRA,P16234,D842V,Imatinib Mesylate,resistance,civic,Pathogenic,6.17
+PDGFRA,P16234,D842V,Sunitinib,resistance,civic,Pathogenic,8.16
+PDGFRA,P16234,D842Y,Crenolanib,sensitivity,civic,Likely pathogenic,
+PDGFRA,P16234,T674I,Imatinib,resistance,civic,Pathogenic,8.7
+PDGFRA,P16234,T674I,Ponatinib,sensitivity,civic,Pathogenic,8.96
+PDGFRA,P16234,V561A,Imatinib,sensitivity,civic,Pathogenic,8.7
+PDGFRA,P16234,V561D,Imatinib,sensitivity,civic,Pathogenic,8.7
+ERCC2,P18074,K751Q,Cisplatin,resistance,civic,Benign,
+XRCC1,P18887,Q399R,fluorouracil,sensitivity,pharmgkb,Benign,
+XRCC1,P18887,Q399R,Platinum compounds,sensitivity,pharmgkb,Benign,
+XRCC1,P18887,R194W,Platinum compounds,sensitivity,pharmgkb,Benign,
+UGT1A6,P19224,R184S,aspirin,sensitivity,pharmgkb,Benign,
+UGT1A6,P19224,T181A,aspirin,sensitivity,pharmgkb,Benign,
+CYP2B6,P20813,K262R,bupropion,sensitivity,pharmgkb,Benign,
+ERBB3,P21860,G284R,Afatinib,sensitivity,civic,Likely pathogenic,
+ERBB3,P21860,R103G,Afatinib,sensitivity,civic,Pathogenic,
+ERBB3,P21860,V104M,Afatinib,sensitivity,civic,Pathogenic,
+COMT,P21964,V158M,clozapine,sensitivity,pharmgkb,Benign,
+COMT,P21964,V158M,entacapone,sensitivity,pharmgkb,Benign,7.22
+COMT,P21964,V158M,fentanyl,sensitivity,pharmgkb,Benign,
+COMT,P21964,V158M,fluvoxamine,sensitivity,pharmgkb,Benign,
+COMT,P21964,V158M,modafinil,sensitivity,pharmgkb,Benign,
+COMT,P21964,V158M,morphine,sensitivity,pharmgkb,Benign,
+COMT,P21964,V158M,nicotine,sensitivity,pharmgkb,Benign,
+COMT,P21964,V158M,opioids,sensitivity,pharmgkb,Benign,
+COMT,P21964,V158M,oxycodone,sensitivity,pharmgkb,Benign,
+COMT,P21964,V158M,paroxetine,sensitivity,pharmgkb,Benign,
+COMT,P21964,V158M,propranolol,sensitivity,pharmgkb,Benign,
+COMT,P21964,V158M,remifentanil,sensitivity,pharmgkb,Benign,
+COMT,P21964,V158M,venlafaxine,sensitivity,pharmgkb,Benign,
+FGFR4,P22455,G388R,everolimus,sensitivity,pharmgkb,Pathogenic,
+FGFR3,P22607,S249C,Cisplatin,resistance,civic,Pathogenic,
+FGFR3,P22607,S249C,Pazopanib,sensitivity,civic,Pathogenic,
+JAK1,P23458,S703I,Ruxolitinib,sensitivity,civic,Pathogenic,9.7
+BDNF,P23560,V66M,olanzapine,sensitivity,pharmgkb,Benign,
+BDNF,P23560,V66M,paroxetine,sensitivity,pharmgkb,Benign,
+CHAT,P28329,A120T,olanzapine,sensitivity,pharmgkb,Benign,
+MAPK1,P28482,E322K,Erlotinib,sensitivity,civic,Pathogenic,
+ERCC5,P28715,D1104H,platinum,sensitivity,pharmgkb,Benign,
+NOS3,P29474,D298E,daunorubicin,sensitivity,pharmgkb,Pathogenic,
+NOS3,P29474,D298E,salvianolic acid b,sensitivity,pharmgkb,Pathogenic,
+NOS3,P29474,D298E,sorafenib,sensitivity,pharmgkb,Pathogenic,
+AKT1,P31749,E17K,Capivasertib,sensitivity,civic,Pathogenic,8.52
+AKT1,P31749,E17K,Uprosertib,sensitivity,civic,Pathogenic,8.7
+AKT1,P31749,E17K,Vemurafenib,resistance,civic,Pathogenic,
+AKT1,P31749,Q79K,Dabrafenib,resistance,civic,Likely pathogenic,
+AKT1,P31749,Q79K,Vemurafenib,resistance,civic,Likely pathogenic,
+ATIC,P31939,T116S,methotrexate,sensitivity,pharmgkb,Benign,6.06
+DRD3,P35462,G9S,clozapine,sensitivity,pharmgkb,Benign,7.06
+DRD3,P35462,G9S,methylphenidate,sensitivity,pharmgkb,Benign,
+DRD3,P35462,G9S,olanzapine,sensitivity,pharmgkb,Benign,7.7
+DRD3,P35462,G9S,paroxetine,sensitivity,pharmgkb,Benign,
+DRD3,P35462,G9S,pramipexole,sensitivity,pharmgkb,Benign,9.18
+DRD3,P35462,G9S,risperidone,sensitivity,pharmgkb,Benign,8.17
+SCN4A,P35499,I1310N,flecainide,sensitivity,pharmgkb,Pathogenic,
+SCN4A,P35499,I1310N,mexiletine,sensitivity,pharmgkb,Pathogenic,
+SCN4A,P35499,N1297K,mexiletine,sensitivity,pharmgkb,Pathogenic,
+SCN4A,P35499,T1313M,flecainide,sensitivity,pharmgkb,Pathogenic,
+SCN4A,P35499,T1313M,mexiletine,sensitivity,pharmgkb,Pathogenic,
+FLT4,P35916,R1324L,sunitinib,sensitivity,pharmgkb,Benign,7.77
+FLT4,P35916,T494A,sunitinib,sensitivity,pharmgkb,Benign,7.77
+KDR,P35968,Q472H,sorafenib,sensitivity,pharmgkb,Benign,10.68
+FLT3,P36888,D835H,Gilteritinib,sensitivity,civic,Pathogenic,9.54
+FLT3,P36888,D835H,Sorafenib,resistance,civic,Pathogenic,8.89
+FLT3,P36888,D835V,Gilteritinib,sensitivity,civic,Pathogenic,9.54
+FLT3,P36888,D835V,Sunitinib,sensitivity,civic,Pathogenic,9.15
+FLT3,P36888,D835V,Tandutinib,resistance,civic,Pathogenic,7.48
+PPARG,P37231,P12A,pioglitazone,sensitivity,pharmgkb,Benign,7.21
+GGCX,P38435,R325Q,warfarin,sensitivity,pharmgkb,Benign,
+FOLR3,P41439,R98C,pemetrexed,sensitivity,pharmgkb,Benign,
+SLC19A1,P41440,H27R,irinotecan,sensitivity,pharmgkb,Benign,
+SLC19A1,P41440,H27R,methotrexate,sensitivity,pharmgkb,Benign,7.92
+SLC19A1,P41440,H27R,Platinum compounds,sensitivity,pharmgkb,Benign,
+PIK3CA,P42336,C420R,BCP32858,resistance,civic,Pathogenic,
+PIK3CA,P42336,C420R,Pictilisib,sensitivity,civic,Pathogenic,10
+PIK3CA,P42336,D350G,Vemurafenib,resistance,civic,Pathogenic,
+PIK3CA,P42336,E542K,Apitolisib,sensitivity,civic,Pathogenic,8.3
+PIK3CA,P42336,E542K,MEN1611,sensitivity,civic,Pathogenic,7.85
+PIK3CA,P42336,E542K,Pictilisib,sensitivity,civic,Pathogenic,10
+PIK3CA,P42336,E542K,Sirolimus,sensitivity,civic,Pathogenic,
+PIK3CA,P42336,E545G,Vemurafenib,resistance,civic,Pathogenic,
+PIK3CA,P42336,E545K,Apitolisib,sensitivity,civic,Pathogenic,8.3
+PIK3CA,P42336,E545K,BCP32858,resistance,civic,Pathogenic,
+PIK3CA,P42336,E545K,Cisplatin,resistance,civic,Pathogenic,
+PIK3CA,P42336,E545K,Gefitinib,resistance,civic,Pathogenic,
+PIK3CA,P42336,E545K,Pictilisib,sensitivity,civic,Pathogenic,10
+PIK3CA,P42336,E545K,Vemurafenib,resistance,civic,Pathogenic,
+PIK3CA,P42336,H1047L,PI-103,sensitivity,civic,Pathogenic,8.75
+PIK3CA,P42336,H1047L,Pictilisib,sensitivity,civic,Pathogenic,10
+PIK3CA,P42336,H1047R,Alpelisib,sensitivity,civic,Pathogenic,8.34
+PIK3CA,P42336,H1047R,BCP32858,resistance,civic,Pathogenic,
+PIK3CA,P42336,H1047R,Dactolisib,sensitivity,civic,Pathogenic,8.4
+PIK3CA,P42336,H1047R,MEN1611,sensitivity,civic,Pathogenic,7.85
+PIK3CA,P42336,H1047R,Pictilisib,sensitivity,civic,Pathogenic,10
+PIK3CA,P42336,H1047R,Taselisib,sensitivity,civic,Pathogenic,10.05
+PIK3CA,P42336,H1047R,Vemurafenib,resistance,civic,Pathogenic,
+PIK3CA,P42336,K111N,PI-103,sensitivity,civic,Likely pathogenic,8.75
+PIK3CA,P42336,K111N,Pictilisib,sensitivity,civic,Likely pathogenic,10
+MTOR,P42345,C1483Y,Sirolimus,sensitivity,civic,Pathogenic,10
+MTOR,P42345,E1799K,Sirolimus,sensitivity,civic,Pathogenic,10
+MTOR,P42345,M2327I,AZD8055,resistance,civic,Pathogenic,9.89
+MTOR,P42345,S2215Y,Sirolimus,sensitivity,civic,Pathogenic,10
+MTHFR,P42898,A222V,benazepril,sensitivity,pharmgkb,Benign,
+MTHFR,P42898,A222V,disulfiram,sensitivity,pharmgkb,Benign,
+MTHFR,P42898,A222V,Fluorouracil,sensitivity,civic,Benign,
+MTHFR,P42898,A222V,methotrexate,sensitivity,pharmgkb,Benign,
+MTHFR,P42898,A222V,pemetrexed,sensitivity,pharmgkb,Benign,
+MTHFR,P42898,A222V,pravastatin,sensitivity,pharmgkb,Benign,
+MTHFR,P42898,E429A,methotrexate,sensitivity,pharmgkb,Benign,
+CHRNA4,P43681,S543R,varenicline,sensitivity,pharmgkb,Benign,
+GNAQ,P50148,Q209P,PLX4720,resistance,civic,Pathogenic,
+GNAQ,P50148,Q209P,Vemurafenib,resistance,civic,Pathogenic,
+BRCA2,P51587,M1I,Rucaparib,sensitivity,civic,Pathogenic,
+BRCA2,P51587,M1R,Rucaparib,sensitivity,civic,Pathogenic,
+BRCA2,P51587,R2336P,Rucaparib,sensitivity,civic,Pathogenic,
+BRCA2,P51587,V159M,Rucaparib,sensitivity,civic,Pathogenic,
+BRCA2,P51587,V211I,Rucaparib,sensitivity,civic,Pathogenic,
+BRCA2,P51587,V211L,Rucaparib,sensitivity,civic,Pathogenic,
+ALDH5A1,P51649,H180Y,methadone,sensitivity,pharmgkb,Benign,
+CYP4F2,P78329,V433M,warfarin,sensitivity,pharmgkb,Benign,
+MC1R,Q01726,V92M,desipramine,sensitivity,pharmgkb,Benign,
+MAP2K1,Q02750,C121S,Vemurafenib,resistance,civic,Pathogenic,
+MAP2K1,Q02750,K57N,Selumetinib,sensitivity,civic,Pathogenic,8.05
+MAP2K1,Q02750,P124S,Selumetinib,resistance,civic,Pathogenic,8.05
+MAP2K1,Q02750,Q56P,Selumetinib,resistance,civic,Pathogenic,8.05
+BTK,Q06187,C481S,Ibrutinib,resistance,civic,Pathogenic,10.1
+AOX1,Q06278,N1135S,azathioprine,sensitivity,pharmgkb,Benign,
+KCNH2,Q12809,N588K,disopyramide,sensitivity,pharmgkb,Pathogenic,4.04
+KCNH2,Q12809,N588K,quinidine,sensitivity,pharmgkb,Pathogenic,6.49
+ATM,Q13315,D1682H,Doxorubicin,resistance,civic,Pathogenic,
+ATM,Q13315,R3008C,Doxorubicin,resistance,civic,Pathogenic,
+ATM,Q13315,T2666A,Doxorubicin,resistance,civic,Likely pathogenic,
+NEUROD1,Q13562,T45S,repaglinide,sensitivity,pharmgkb,Benign,
+KCNJ11,Q14654,K23Q,gliclazide,sensitivity,pharmgkb,Benign,
+KCNJ11,Q14654,K23Q,repaglinide,sensitivity,pharmgkb,Benign,
+STK11,Q15831,D194E,Everolimus,sensitivity,civic,Likely pathogenic,
+ETFDH,Q16134,T31I,methylphenidate,sensitivity,pharmgkb,Benign,
+CYP1B1,Q16678,A119S,risperidone,sensitivity,pharmgkb,Benign,
+CYP1B1,Q16678,R48G,risperidone,sensitivity,pharmgkb,Benign,
+DDR2,Q16832,G253C,Dasatinib,sensitivity,civic,Likely pathogenic,9.4
+DDR2,Q16832,G505S,Dasatinib,sensitivity,civic,Likely pathogenic,9.4
+DDR2,Q16832,G774V,Dasatinib,sensitivity,civic,Likely pathogenic,9.4
+DDR2,Q16832,I638F,Dasatinib,sensitivity,civic,Likely pathogenic,9.4
+DDR2,Q16832,L239R,Dasatinib,sensitivity,civic,Likely pathogenic,9.4
+DDR2,Q16832,L63V,Dasatinib,sensitivity,civic,Likely pathogenic,9.4
+PEAR1,Q5VY43,N848K,prasugrel,sensitivity,pharmgkb,Benign,
+APOA5,Q6Q788,S19L,fenofibrate,sensitivity,pharmgkb,Benign,
+KMT2E,Q8IZD2,G999C,duloxetine,sensitivity,pharmgkb,Benign,
+ANKK1,Q8NFD2,E713K,bupropion,sensitivity,pharmgkb,Benign,
+ANKK1,Q8NFD2,E713K,disulfiram,sensitivity,pharmgkb,Benign,
+ANKK1,Q8NFD2,E713K,nicotine,sensitivity,pharmgkb,Benign,
+ANKK1,Q8NFD2,E713K,prochlorperazine,sensitivity,pharmgkb,Benign,
+SCARB1,Q8WTV0,G2S,fenofibrate,sensitivity,pharmgkb,Benign,
+MYLIP,Q8WY64,N342I,atorvastatin,sensitivity,pharmgkb,Benign,
+ABCC2,Q92887,C1515Y,lopinavir,sensitivity,pharmgkb,Benign,
+ABCC2,Q92887,V417I,imatinib,sensitivity,pharmgkb,Benign,
+CSF3R,Q99062,T618I,Ruxolitinib,sensitivity,civic,Pathogenic,
+MTR,Q99707,D919G,benazepril,sensitivity,pharmgkb,Benign,
+MTR,Q99707,D919G,methotrexate,sensitivity,pharmgkb,Benign,
+SMO,Q99835,D473H,Patidegib,sensitivity,civic,Pathogenic,8.85
+SMO,Q99835,D473H,Vismodegib,resistance,civic,Pathogenic,9.4
+SMO,Q99835,L412F,Vismodegib,resistance,civic,Pathogenic,9.4
+SLC22A4,Q9H015,L503F,imatinib,sensitivity,pharmgkb,Benign,
+ABCG8,Q9H221,D19N,atorvastatin,sensitivity,pharmgkb,Pathogenic,
+CDH23,Q9H251,V1675I,methylphenidate,sensitivity,pharmgkb,Benign,
+PIGM,Q9H3S5,F365L,methylphenidate,sensitivity,pharmgkb,Benign,
+UGT1A8,Q9HAW9,A173G,raloxifene,sensitivity,pharmgkb,Benign,
+GP6,Q9HCN6,P219A,aspirin,sensitivity,pharmgkb,Benign,
+TLR7,Q9NYK1,Q11P,imiquimod,sensitivity,pharmgkb,Benign,5.21
+ALK,Q9UM73,F1174L,Alectinib,sensitivity,civic,Pathogenic,9.23
+ALK,Q9UM73,F1174L,AZD3463,sensitivity,civic,Pathogenic,9.12
+ALK,Q9UM73,F1174L,Lorlatinib,sensitivity,civic,Pathogenic,9.7
+ALK,Q9UM73,F1174L,TAE684,sensitivity,civic,Pathogenic,9.82
+ALK,Q9UM73,F1245C,Ceritinib,sensitivity,civic,Pathogenic,9.7
+ALK,Q9UM73,F1245C,Crizotinib,resistance,civic,Pathogenic,9.33
+ALK,Q9UM73,F1245C,Lorlatinib,sensitivity,civic,Pathogenic,9.7
+ALK,Q9UM73,F1245V,Entrectinib,sensitivity,civic,Pathogenic,8.8
+ALK,Q9UM73,G1202R,Alectinib,resistance,civic,Likely pathogenic,9.23
+ALK,Q9UM73,G1202R,Brigatinib,resistance,civic,Likely pathogenic,9.43
+ALK,Q9UM73,G1202R,Ceritinib,resistance,civic,Likely pathogenic,9.7
+ALK,Q9UM73,G1202R,Crizotinib,resistance,civic,Likely pathogenic,9.33
+ALK,Q9UM73,G1202R,Tanespimycin,sensitivity,civic,Likely pathogenic,
+ALK,Q9UM73,G1269A,Alectinib,resistance,civic,Likely pathogenic,9.23
+ALK,Q9UM73,G1269A,Brigatinib,sensitivity,civic,Likely pathogenic,9.43
+ALK,Q9UM73,G1269A,Ceritinib,sensitivity,civic,Likely pathogenic,9.7
+ALK,Q9UM73,G1269A,Crizotinib,resistance,civic,Likely pathogenic,9.33
+ALK,Q9UM73,L1152R,Crizotinib,resistance,civic,Likely pathogenic,9.33
+ALK,Q9UM73,L1196M,Alectinib,sensitivity,civic,Likely pathogenic,9.23
+ALK,Q9UM73,L1196M,Ceritinib,sensitivity,civic,Likely pathogenic,9.7
+ALK,Q9UM73,L1196M,Crizotinib,resistance,civic,Likely pathogenic,9.33
+ALK,Q9UM73,R1275Q,Crizotinib,sensitivity,civic,Pathogenic,9.33
+ALK,Q9UM73,R1275Q,Lorlatinib,sensitivity,civic,Pathogenic,9.7
+ALK,Q9UM73,S1206Y,Ceritinib,sensitivity,civic,Likely pathogenic,9.7
+ALK,Q9UM73,S1206Y,Crizotinib,resistance,civic,Likely pathogenic,9.33
+ALK,Q9UM73,V1180L,Alectinib,resistance,civic,Likely pathogenic,9.23
+ALK,Q9UM73,V1180L,Brigatinib,sensitivity,civic,Likely pathogenic,9.43
+ALK,Q9UM73,V1180L,Ceritinib,sensitivity,civic,Likely pathogenic,9.7
+ALK,Q9UM73,V1180L,Crizotinib,resistance,civic,Likely pathogenic,9.33
+ALK,Q9UM73,V1180L,TAE684,sensitivity,civic,Likely pathogenic,9.82
+GABRQ,Q9UN88,I478L,venlafaxine,sensitivity,pharmgkb,Benign,
+ABCG2,Q9UNQ0,Q141K,allopurinol,sensitivity,pharmgkb,Benign,
+ABCG2,Q9UNQ0,Q141K,rosuvastatin,sensitivity,pharmgkb,Benign,
+ABCG2,Q9UNQ0,Q141K,sulfasalazine,sensitivity,pharmgkb,Benign,
+SH2B3,Q9UQQ2,W262G,candesartan,sensitivity,pharmgkb,Benign,
+AKT3,Q9Y243,E17K,Vemurafenib,resistance,civic,Pathogenic,
+SLCO1B1,Q9Y6L6,N130D,Methotrexate,sensitivity,civic,Benign,
+SLCO1B1,Q9Y6L6,N130H,atorvastatin,sensitivity,pharmgkb,Benign,
+SLCO1B1,Q9Y6L6,N130H,irinotecan,sensitivity,pharmgkb,Benign,
+SLCO1B1,Q9Y6L6,N130H,rocuronium,sensitivity,pharmgkb,Benign,
+SLCO1B1,Q9Y6L6,P155T,fluvastatin,sensitivity,pharmgkb,Benign,
+SLCO1B1,Q9Y6L6,V174A,methotrexate,sensitivity,pharmgkb,Pathogenic,
+SLCO1B1,Q9Y6L6,V174A,pravastatin,sensitivity,pharmgkb,Pathogenic,
+SLCO1B1,Q9Y6L6,V174A,repaglinide,sensitivity,pharmgkb,Pathogenic,
+SLCO1B1,Q9Y6L6,V174A,rosiglitazone,sensitivity,pharmgkb,Pathogenic,
+SLCO1B1,Q9Y6L6,V174A,simvastatin,sensitivity,pharmgkb,Pathogenic,
