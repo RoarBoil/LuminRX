@@ -10,7 +10,7 @@
 *.pyc
 *.model
 *.npy
-experiment/images/
+experiments/images/
 datasets/raw/
 datasets/merged_evidence_patho_annotation.csv
 datasets/merged_evidence_patho.csv

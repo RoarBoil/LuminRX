@@ -45,7 +45,7 @@ for i in range(len(df)):
                                 type_value = significance.get("type", "Unknown")
                                 df.loc[i, 'patho'] = type_value
                                 print(f"Clinical Significance Type: {type_value}")
-                                print(df.head())
+                                #print(df.head())
                                 df.to_csv('../datasets/merged_evidence_patho_annotation.csv',index=False)
                         else:
                             print(f"No clinical significance found for {target_mutation}")
@@ -61,4 +61,12 @@ for i in range(len(df)):
         print(f"Failed to fetch data from API. Status code: {response.status_code}")
 
 print(df.head())
+'''
+      gene uniprotac variant               drug                                              smile  label    source   patho
+0  SLCO1B3    F5H094   M233I  mycophenolic acid     CC1=C2COC(=O)C2=C(C(=C1OC)C/C=C(\C)/CCC(=O)O)O      1  pharmgkb    none
+1  SLCO1B3    F5H094   S112P  mycophenolic acid     CC1=C2COC(=O)C2=C(C(=C1OC)C/C=C(\C)/CCC(=O)O)O      1  pharmgkb  Benign
+2  SLCO1B3    F5H094   S112P          sunitinib  CCN(CC)CCNC(=O)C1=C(NC(=C1C)/C=C\2/C3=C(C=CC(=...      1  pharmgkb  Benign
+3     TBXT    O15178   G177D        flunisolide  C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1C[C@@H]4[C@]...      1  pharmgkb  Benign
+4  SLC22A1    O15245   M408V          metformin                                  CN(C)C(=N)N=C(N)N      1  pharmgkb  Benign
+'''
 df.to_csv('../datasets/merged_evidence_patho_annotation.csv',index=False)
