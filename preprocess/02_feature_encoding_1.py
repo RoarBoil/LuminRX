@@ -7,7 +7,6 @@ warnings.filterwarnings('ignore')
 import pubchempy as pcp
 from tqdm import tqdm
 
-'''
 # feature 1: fingerprint,molecular_weight,cactvs_fingerprint
 drug_table = pd.read_csv('../datasets/merged_evidence.csv')
 drug_table['molecular_weight'] = 0
@@ -51,7 +50,7 @@ for i in tqdm(range(drug_table.shape[0])):
     
 print(drug_table)
 drug_table.to_csv('../datasets/middlefile/merged_evidence_fingerprint.csv', index=None)
-'''
+
 '''
         gene uniprotac variant               drug        label    source       patho molecular_weight                                        fingerprint                                 cactvs_fingerprint
 0    SLCO1B3    F5H094   S112P  mycophenolic acid  sensitivity  pharmgkb      Benign            320.3  00000371E0783800000000000000000000000000000120...  1110000001111000001110000000000000000000000000...
@@ -158,3 +157,78 @@ df.to_pickle('../datasets/middlefile/merged_evidence_fingerprint_onehot.dataset'
 [570 rows x 12 columns]
 '''
 
+# feature 3: pssm
+df = pd.read_pickle('../datasets/middlefile/merged_evidence_fingerprint_onehot.dataset')
+# Convert cactvs_fingerprint to numerical array
+def process_fingerprint(fingerprint):
+    return np.array([int(x) for x in fingerprint], dtype=int)
+
+df['fingerprint_array'] = df['cactvs_fingerprint'].apply(process_fingerprint)
+
+# Function to extract PSSM matrix from a .pssm file
+def extract_pssm(pssm_file):
+    with open(pssm_file, 'r') as file:
+        lines = file.readlines()
+
+    pssm_matrix = []
+    reading_pssm = False
+
+    for line in lines:
+        # Start reading after the header
+        if line.startswith("Last position-specific scoring matrix computed"):
+            reading_pssm = True
+            continue
+
+        if reading_pssm:
+            # Check if the line starts with a digit (indicating a valid PSSM row)
+            line = line.strip()
+            if line and line[0].isdigit():
+                parts = line.split()
+                scores = parts[2:22]  # Extract the PSSM matrix values (20 columns)
+                pssm_matrix.append([int(score) for score in scores])
+            elif not line:  # Stop at empty lines after matrix
+                break
+
+    # Ensure we return a NumPy array
+    return np.array(pssm_matrix, dtype=int)
+
+# Extract PSSM for wild-type and mutated sequences
+pssm_dir = "../datasets/middlefile/pssm/"
+wild_pssms = []
+mutated_pssms = []
+
+for index, row in df.iterrows():
+    uniprotac = row['uniprotac']
+    mutation = row['variant']
+    
+    # Define file paths
+    wild_pssm_file = os.path.join(pssm_dir, f"{uniprotac}_pssm.txt")
+    mutated_pssm_file = os.path.join(pssm_dir, f"{uniprotac}_{mutation}_pssm.txt")
+    
+    # Extract and store PSSM matrices
+    wild_pssm = extract_pssm(wild_pssm_file)
+    mutated_pssm = extract_pssm(mutated_pssm_file)
+    
+    wild_pssms.append(wild_pssm)
+    mutated_pssms.append(mutated_pssm)
+
+# Add PSSM matrices to dataframe
+df['wild_pssm'] = wild_pssms
+df['mutated_pssm'] = mutated_pssms
+print(df)
+df.to_pickle('../datasets/middlefile/merged_evidence_fingerprint_onehot_pssm.dataset')
+
+'''
+        gene uniprotac variant  ...                                  fingerprint_array                                          wild_pssm                                       mutated_pssm
+0    SLCO1B3    F5H094   S112P  ...  [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, ...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...
+1    SLCO1B3    F5H094   S112P  ...  [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, ...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...
+2       TBXT    O15178   G177D  ...  [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, ...  [[-2, -2, -3, -4, -2, -2, -3, -3, -2, 1, 3, -2...  [[-2, -2, -3, -4, -2, -2, -3, -3, -2, 1, 3, -2...
+3    SLC22A1    O15245   M408V  ...  [1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, ...  [[-2, -2, -3, -4, -2, -1, -3, -4, -2, 0, 1, -2...  [[-2, -2, -3, -4, -2, -1, -3, -4, -2, 0, 1, -2...
+4      ABCC4    O15439   G187W  ...  [1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, ...  [[-2, -2, -3, -4, -2, -2, -3, -4, -3, 2, 4, -3...  [[-2, -2, -3, -4, -2, -2, -3, -4, -3, 2, 4, -3...
+..       ...       ...     ...  ...                                                ...                                                ...                                                ...
+565  SLCO1B1    Q9Y6L6   V174A  ...  [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, ...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...
+566  SLCO1B1    Q9Y6L6   V174A  ...  [1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, ...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...
+567  SLCO1B1    Q9Y6L6   V174A  ...  [1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, ...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...
+568  SLCO1B1    Q9Y6L6   V174A  ...  [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, ...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...
+569  SLCO1B1    Q9Y6L6   V174A  ...  [1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, ...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...
+'''
