@@ -1,0 +1,71 @@
+uniprotac,variant,drug,label,patho,source
+O43868,P22L,gemcitabine,sensitivity,Benign,pharmgkb
+O75874,R132H,AGI-5198,sensitivity,Pathogenic,civic
+P00519,G250E,Axitinib,resistance,Likely pathogenic,civic
+P00519,G250E,Dasatinib,sensitivity,Likely pathogenic,civic
+P00519,G250E,Imatinib,resistance,Likely pathogenic,civic
+P00519,G250E,Imatinib Mesylate,resistance,Likely pathogenic,civic
+P00519,G250E,Nilotinib,resistance,Likely pathogenic,civic
+P00533,T263P,Erlotinib,sensitivity,Likely pathogenic,civic
+P01116,G12C,Gefitinib,resistance,Pathogenic,civic
+P01116,G12C,Melphalan,resistance,Pathogenic,civic
+P01116,G12C,Regorafenib,resistance,Pathogenic,civic
+P01116,G12R,Regorafenib,resistance,Pathogenic,civic
+P02774,D432E,deferasirox,sensitivity,Benign,pharmgkb
+P04637,M237I,AMGMDS3,resistance,Pathogenic,civic
+P04637,P47S,Cisplatin,resistance,Benign,civic
+P04637,R273C,AMGMDS3,resistance,Pathogenic,civic
+P06276,A567T,donepezil,sensitivity,Pathogenic,pharmgkb
+P06276,A567T,rivastigmine,sensitivity,Pathogenic,pharmgkb
+P06280,P259L,migalastat,sensitivity,Pathogenic,pharmgkb
+P06280,Y216C,migalastat,sensitivity,Pathogenic,pharmgkb
+P08183,S893A,atorvastatin,sensitivity,Benign,pharmgkb
+P08183,S893A,cyclosporine,sensitivity,Benign,pharmgkb
+P08183,S893A,fluoxetine,sensitivity,Benign,pharmgkb
+P08183,S893A,modafinil,sensitivity,Benign,pharmgkb
+P08183,S893A,ondansetron,sensitivity,Benign,pharmgkb
+P08183,S893A,paclitaxel,sensitivity,Benign,pharmgkb
+P08183,S893A,pravastatin,sensitivity,Benign,pharmgkb
+P08183,S893A,simvastatin,sensitivity,Benign,pharmgkb
+P08183,S893A,sunitinib,sensitivity,Benign,pharmgkb
+P08183,S893A,tacrolimus,sensitivity,Benign,pharmgkb
+P08183,S893A,tramadol,sensitivity,Benign,pharmgkb
+P08684,M445T,fluvastatin,sensitivity,Benign,pharmgkb
+P10721,D816H,Imatinib,resistance,Pathogenic,civic
+P10721,L576P,Dasatinib,sensitivity,Pathogenic,civic
+P10721,L576P,Sunitinib,resistance,Pathogenic,civic
+P13569,G1249R,ivacaftor,sensitivity,Pathogenic,pharmgkb
+P13569,R1070W,ivacaftor,sensitivity,Pathogenic,pharmgkb
+P13569,S549R,ivacaftor,sensitivity,Pathogenic,pharmgkb
+P13569,S549R,ivacaftor,sensitivity,Pathogenic,pharmgkb
+P15056,V600D,BRAF Inhibitor,sensitivity,Pathogenic,civic
+P15056,V600D,Dabrafenib,sensitivity,Pathogenic,civic
+P15056,V600D,Vemurafenib,sensitivity,Pathogenic,civic
+P15056,V600E,Cobimetinib,sensitivity,Likely pathogenic,civic
+P15056,V600E,Dabrafenib,resistance,Likely pathogenic,civic
+P15056,V600E,Irinotecan,resistance,Likely pathogenic,civic
+P15056,V600E,Oxaliplatin,resistance,Likely pathogenic,civic
+P15056,V600E,Pictilisib,sensitivity,Likely pathogenic,civic
+P15056,V600E,Trametinib,sensitivity,Likely pathogenic,civic
+P15056,V600K,Dabrafenib,sensitivity,Pathogenic,civic
+P15056,V600K,Trametinib,sensitivity,Pathogenic,civic
+P15056,V600K,Vemurafenib,sensitivity,Pathogenic,civic
+P16234,V561D,Imatinib,sensitivity,Pathogenic,civic
+P19224,R184S,aspirin,sensitivity,Benign,pharmgkb
+P35462,G9S,clozapine,sensitivity,Benign,pharmgkb
+P35462,G9S,methylphenidate,sensitivity,Benign,pharmgkb
+P35462,G9S,olanzapine,sensitivity,Benign,pharmgkb
+P35462,G9S,paroxetine,sensitivity,Benign,pharmgkb
+P35462,G9S,pramipexole,sensitivity,Benign,pharmgkb
+P35462,G9S,risperidone,sensitivity,Benign,pharmgkb
+P51587,M1I,Rucaparib,sensitivity,Pathogenic,civic
+P51587,M1R,Rucaparib,sensitivity,Pathogenic,civic
+Q06278,N1135S,azathioprine,sensitivity,Benign,pharmgkb
+Q16832,G505S,Dasatinib,sensitivity,Likely pathogenic,civic
+Q9H221,D19N,atorvastatin,sensitivity,Pathogenic,pharmgkb
+Q9UM73,F1174L,Alectinib,sensitivity,Pathogenic,civic
+Q9UM73,F1174L,AZD3463,sensitivity,Pathogenic,civic
+Q9UM73,F1174L,Lorlatinib,sensitivity,Pathogenic,civic
+Q9UM73,F1174L,TAE684,sensitivity,Pathogenic,civic
+Q9UM73,R1275Q,Crizotinib,sensitivity,Pathogenic,civic
+Q9UM73,R1275Q,Lorlatinib,sensitivity,Pathogenic,civic
