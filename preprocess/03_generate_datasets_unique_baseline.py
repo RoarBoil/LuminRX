@@ -6,6 +6,15 @@ from tensorflow.keras.utils import to_categorical
 # Load data
 df = pd.read_pickle('../datasets/middlefile/merged_evidence_fingerprint_onehot_pssm.dataset')
 df = df[['gene','uniprotac','variant','drug','label','patho','source','molecular_weight','onehot_before','onehot_after','fingerprint_array','wild_pssm','mutated_pssm']]
+print(df.head())
+'''
+      gene uniprotac variant  ...                                  fingerprint_array                                          wild_pssm                                       mutated_pssm
+0  SLCO1B3    F5H094   S112P  ...  [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, ...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...
+1  SLCO1B3    F5H094   S112P  ...  [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, ...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...  [[-1, -2, -2, -3, -2, -1, -2, -3, -2, 1, 2, -2...
+2     TBXT    O15178   G177D  ...  [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, ...  [[-2, -2, -3, -4, -2, -2, -3, -3, -2, 1, 3, -2...  [[-2, -2, -3, -4, -2, -2, -3, -3, -2, 1, 3, -2...
+3  SLC22A1    O15245   M408V  ...  [1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, ...  [[-2, -2, -3, -4, -2, -1, -3, -4, -2, 0, 1, -2...  [[-2, -2, -3, -4, -2, -1, -3, -4, -2, 0, 1, -2...
+4    ABCC4    O15439   G187W  ...  [1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, ...  [[-2, -2, -3, -4, -2, -2, -3, -4, -3, 2, 4, -3...  [[-2, -2, -3, -4, -2, -2, -3, -4, -3, 2, 4, -3...
+'''
 
 # Padding or slicing onehot and pssm features to length 1024
 def pad_or_slice_features(feature, target_length=1024, mutation_index=None):
@@ -81,6 +90,14 @@ test_df = df[df['mutation_id'].isin(test_mutations)].reset_index(drop=True)
 train_df.drop(columns=['mutation_id'], inplace=True)
 test_df.drop(columns=['mutation_id'], inplace=True)
 
+# Prepare fingerprint features as NumPy arrays
+def prepare_fingerprint_dataset(df):
+    return np.stack(df['fingerprint_array'].to_numpy())  # Shape: (num_samples, fingerprint_dim)
+
+# Extract fingerprints for training and testing sets
+train_fingerprints = prepare_fingerprint_dataset(train_df)
+test_fingerprints = prepare_fingerprint_dataset(test_df)
+
 # Prepare TensorFlow-compatible datasets
 def prepare_numpy_dataset(df):
     onehot_before = np.stack(df['padded_onehot_before'].to_numpy())  # Shape: (num_samples, 1024, 20)
@@ -104,15 +121,20 @@ print(f"Testing set: {len(test_df)} samples, {len(test_mutations)} unique mutati
 
 # Save datasets
 np.save('../datasets/train_data/train_inputs.npy', train_inputs)
-print(train_inputs.shape) # (513, 1024, 80)
+print(train_inputs.shape) # (500, 1024, 80)
 np.save('../datasets/train_data/train_labels_label.npy', train_labels_label)
-print(train_labels_label.shape) # (513, 2)
+print(train_labels_label.shape) # (500, 2)
 np.save('../datasets/train_data/train_labels_patho.npy', train_labels_patho)
 np.save('../datasets/train_data/test_inputs.npy', test_inputs)
-print(test_inputs.shape) # (57, 1024, 80)
+print(test_inputs.shape) # (70, 1024, 80)
 np.save('../datasets/train_data/test_labels_label.npy', test_labels_label)
-print(test_labels_label.shape) # (57, 2)
+print(test_labels_label.shape) # (70, 2)
 np.save('../datasets/train_data/test_labels_patho.npy', test_labels_patho)
+
+# Save fingerprint arrays
+np.save('../datasets/train_data/train_fingerprints.npy', train_fingerprints)
+print(train_fingerprints.shape) # (500, 881)
+np.save('../datasets/train_data/test_fingerprints.npy', test_fingerprints)
 
 # Save DataFrame to CSV with selected columns
 columns_to_save = ['uniprotac', 'variant', 'drug', 'label', 'patho', 'source']
