@@ -5,6 +5,7 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Dense, Dropout, Flatten
 from tensorflow.keras.layers import LayerNormalization, MultiHeadAttention, Layer
 from tensorflow.keras.layers import Reshape, Concatenate
+from tensorflow.keras.callbacks import ModelCheckpoint
 
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.model_selection import train_test_split
@@ -92,7 +93,9 @@ def build_cascade_transformer_model_with_fingerprint(input_shape, fingerprint_sh
     x = TransformerBlock(embed_dim=input_shape[1], num_heads=num_heads, ff_dim=ff_dim)(x)
     x = Flatten()(x)
     shared_dense = Dense(input_shape[1], activation='relu', name="shared_dense_1")(x)
-    shared_dropout = Dropout(0.3, name="shared_dropout_1")(shared_dense)
+    shared_dense_task1 = Dense(128, activation='relu', name="shared_dense_2")(shared_dense)
+    shared_dense_task1 = Dense(32, activation='relu', name="shared_dense_3")(shared_dense_task1)
+    shared_dropout = Dropout(0.3, name="shared_dropout_1")(shared_dense_task1)
 
     # Task 1 Output
     task1_output = Dense(task1_classes, activation='softmax', name="task1_output")(shared_dropout)
@@ -130,6 +133,16 @@ model = build_cascade_transformer_model_with_fingerprint(
 
 model.summary()
 
+weights_path = 'model/cascade_transformer_model_weights.h5'
+model_checkpoint_callback = ModelCheckpoint(
+    filepath=weights_path,
+    monitor='val_task1_output_accuracy',
+    save_best_only=True,
+    mode='max',
+    save_weights_only=True, 
+    verbose=1
+)
+
 # Compile the model
 model.compile(
     optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
@@ -144,11 +157,12 @@ history = model.fit(
     validation_data=([val_inputs, val_fingerprints], [val_labels_label, val_labels_patho]),
     epochs=50,
     batch_size=32,
-    verbose=1
+    verbose=1,
+    callbacks=[model_checkpoint_callback] 
 )
 
 # Save the model weights
-model.save_weights('model/cascade_transformer_model_weights.h5')
+model.save_weights(weights_path)
 print("Model weights saved successfully.")
 
 test_loss, test_label_loss, test_patho_loss, test_label_acc, test_patho_acc = model.evaluate(
