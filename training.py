@@ -136,7 +136,7 @@ model.summary()
 weights_path = 'model/cascade_transformer_model_weights.h5'
 model_checkpoint_callback = ModelCheckpoint(
     filepath=weights_path,
-    monitor='val_task1_output_accuracy',
+    monitor='val_task2_output_accuracy',
     save_best_only=True,
     mode='max',
     save_weights_only=True, 
@@ -153,8 +153,8 @@ model.compile(
 # Train the model
 history = model.fit(
     [train_inputs, train_fingerprints],
-    [train_labels_label, train_labels_patho],
-    validation_data=([val_inputs, val_fingerprints], [val_labels_label, val_labels_patho]),
+    [train_labels_patho, train_labels_label],
+    validation_data=([val_inputs, val_fingerprints], [val_labels_patho, val_labels_label]),
     epochs=50,
     batch_size=32,
     verbose=1,
@@ -165,17 +165,18 @@ history = model.fit(
 model.save_weights(weights_path)
 print("Model weights saved successfully.")
 
-test_loss, test_label_loss, test_patho_loss, test_label_acc, test_patho_acc = model.evaluate(
+test_loss, test_patho_loss, test_label_loss, test_patho_acc, test_label_acc = model.evaluate(
     [test_inputs, test_fingerprints],  # Include both sequence inputs and fingerprint inputs
-    [test_labels_label, test_labels_patho],  # Outputs for both tasks
+    [test_labels_patho, test_labels_label],  # Outputs for both tasks
     verbose=1
 )
 
 print(f"Test Total Loss: {test_loss}")
-print(f"Test Label Loss: {test_label_loss}")
 print(f"Test Patho Loss: {test_patho_loss}")
-print(f"Test Label Accuracy: {test_label_acc}")
+print(f"Test Label Loss: {test_label_loss}")
 print(f"Test Patho Accuracy: {test_patho_acc}")
+print(f"Test Label Accuracy: {test_label_acc}")
+
 
 test_predictions = model.predict([test_inputs, test_fingerprints])
 task1_pred = np.argmax(test_predictions[0], axis=1)
@@ -186,25 +187,10 @@ test_df["task1_prediction"] = task1_pred
 test_df["task2_prediction"] = task2_pred
 test_df.to_csv("test_predictions.csv", index=False)
 
-# Plot loss curves
-print(history.history.keys())
-plt.figure(figsize=(4, 3))
-plt.plot(history.history['task1_output_loss'], label='Train Label Loss', color='#4B0082')
-plt.plot(history.history['val_task1_output_loss'], label='Val Label Loss', color='#9370DB')
-plt.plot(history.history['task2_output_loss'], label='Train Patho Loss', color='#006400')
-plt.plot(history.history['val_task2_output_loss'], label='Val Patho Loss', color='#8FBC8F')
-plt.xlabel('Epochs')
-plt.ylabel('Loss')
-plt.legend()
-plt.title('Loss Curves for Multi-Task Learning')
-plt.tight_layout()
-plt.savefig('images/training-loss.png',dpi=300)
-#plt.show()
-
 # Function to plot confusion matrix
 def plot_confusion_matrix(y_true, y_pred, task_name):
     cm = confusion_matrix(y_true, y_pred)
-    plt.figure(figsize=(3, 3))  # Adjust the figure size here
+    plt.figure(figsize=(3, 3)) 
     ax = plt.gca()  # Get the current axes
     disp = ConfusionMatrixDisplay(confusion_matrix=cm)
     disp.plot(cmap=plt.cm.Purples, ax=ax)  # Pass the axes explicitly
@@ -214,10 +200,10 @@ def plot_confusion_matrix(y_true, y_pred, task_name):
     #plt.show()
 
 # Task 1 Confusion Matrix
-plot_confusion_matrix(np.argmax(test_labels_label, axis=1), task1_pred, task_name="Resistance prediction")
+plot_confusion_matrix(np.argmax(test_labels_patho, axis=1), task1_pred, task_name="Pathogenic Prediction")
 
 # Task 2 Confusion Matrix
-plot_confusion_matrix(np.argmax(test_labels_patho, axis=1), task2_pred, task_name="Pathogenic prediction")
+plot_confusion_matrix(np.argmax(test_labels_label, axis=1), task2_pred, task_name="Resistance Prediction")
 
 # Function to plot ROC curve
 def plot_roc_curve(y_true, y_score, task_name):
@@ -238,9 +224,9 @@ def plot_roc_curve(y_true, y_score, task_name):
     #plt.show()
 
 # Task 1 ROC Curve
-plot_roc_curve(np.argmax(test_labels_label, axis=1), test_predictions[0], task_name="Resistance prediction")
+plot_roc_curve(np.argmax(test_labels_patho, axis=1), test_predictions[0], task_name="Pathogenic Prediction")
 
 # Task 2 ROC Curve
-plot_roc_curve(np.argmax(test_labels_patho, axis=1), test_predictions[1], task_name="Pathogenic prediction")
+plot_roc_curve(np.argmax(test_labels_label, axis=1), test_predictions[1], task_name="Resistance Prediction")
 
 
