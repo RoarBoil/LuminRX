@@ -10,7 +10,6 @@
 *.pyc
 *.model
 *.npy
-*.h5
 experiments/images/
 experiments/05-multipoint-analysis/data/
 experiments/05-multipoint-analysis/images/
