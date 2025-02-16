@@ -1,5 +1,5 @@
 # Embrace
-Predicting the effect of mutations on clinical drug response
+Predicting the effect of mutations on clinical drug response and pathogenicity using multi-task learning
 
 <p align="center"><img width="100%" src="images/Figure 1.png" /></p>
 
