@@ -12,4 +12,4 @@ Predicting the effect of mutations on clinical drug response and pathogenicity u
 ## Processed training dataset and model weights
 |model|trained weights|parameter|training data|test data|
 |:---:|:---:|:---:|:---:|:---:|
-|Embrace|[Download](https://github.com/RoarBoil/LuminRX/model/cascade_transformer_model_weights.h5)|7,043,588|[Download](https://github.com/RoarBoil/LuminRX/trainset_unique.csv)|[Download](https://github.com/RoarBoil/LuminRX/testset_unique.csv)|
+|LuminRX|[Download](https://github.com/RoarBoil/LuminRX/model/cascade_transformer_model_weights.h5)|7,043,588|[Download](https://github.com/RoarBoil/LuminRX/trainset_unique.csv)|[Download](https://github.com/RoarBoil/LuminRX/testset_unique.csv)|
